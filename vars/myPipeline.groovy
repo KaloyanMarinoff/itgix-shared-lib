@@ -9,8 +9,9 @@ def call() {
                 env.BRANCH_NAME == 'development'
                 }
             }
-            steps {
+          steps {
                 echo 'Building..'
+                sh '.gradlew --version'
                 sh './gradlew build --no-daemon'
             }
         }
