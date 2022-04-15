@@ -11,7 +11,7 @@ def call() {
             }
           steps {
                 echo 'Building..'
-                sh '.gradlew --version'
+                sh '.gradle --version'
                 sh './gradlew build --no-daemon'
             }
         }
